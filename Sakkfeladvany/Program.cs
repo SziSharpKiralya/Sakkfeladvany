@@ -12,6 +12,7 @@
             while (err)
             {
 				err = false;
+				Console.WriteLine("7. feladat:");
 				Console.Write("Adja meg a sakktábla oszlopainak számát: ");
                 input = Console.ReadLine();
                 if (!int.TryParse(input, out oszlopokSzama) || oszlopokSzama <= 0)
@@ -34,6 +35,7 @@
 
 			if (feladvany.MegoldasSorszama == 0)
 			{
+				Console.WriteLine("9. feladat:");
 				Console.WriteLine("Nincs megoldás!");
 			}
 		}
